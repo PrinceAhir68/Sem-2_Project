@@ -1,0 +1,293 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                        EXPENSE REPORT EXPORT                         ║
+║                    All Information with Expenses                     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Export Generated: 2026-07-25 00:23:19
+
+┌────────────────────────────────────────────────────────────────────┐
+│ USER INFORMATION                                                  │
+└────────────────────────────────────────────────────────────────────┘
+  Name            : Prince
+  Email           : pince@gmail.com
+  Username        : prince
+  Member Since    : 2026-07-19T17:24:44
+
+┌────────────────────────────────────────────────────────────────────┐
+│ GROUPS AND MEMBERS                                                │
+└────────────────────────────────────────────────────────────────────┘
+  1. Dubai trip
+     Creator: Prince
+     Members: 2
+       • deepak (deepak@gmail.com)
+       • Prince (pince@gmail.com)
+
+  2. Rishikesh Trip
+     Creator: Prince
+     Members: 2
+       • deepak (deepak@gmail.com)
+       • Prince (pince@gmail.com)
+
+  3. Dubai trip
+     Creator: Prince
+     Members: 2
+       • deepak (deepak@gmail.com)
+       • Prince (pince@gmail.com)
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ALL EXPENSES                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Dubai trip
+  ────────────────────────────────────────────────────────────────────
+    • dfghjk
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-25T05:42:05
+    • adwd
+      Amount: Rs.100.00 | Category: travel
+      Paid by: deepak | Date: 2026-07-25T05:41:02
+    • sdfg
+      Amount: Rs.500.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T06:48:35
+    • rtrtft
+      Amount: Rs.500.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-21T06:47:18
+    • sdf
+      Amount: Rs.500.00 | Category: travel
+      Paid by: deepak | Date: 2026-07-21T06:45:04
+    • sdfg
+      Amount: Rs.500.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-21T05:16
+    • hm,
+      Amount: Rs.500.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T05:14:41
+
+  Group: Rishikesh Trip
+  ────────────────────────────────────────────────────────────────────
+    • gghv
+      Amount: Rs.100.00 | Category: food
+      Paid by: deepak | Date: 2026-07-25T05:32:50
+    • ghjk
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-25T05:29:04
+    • sdf
+      Amount: Rs.100.00 | Category: hotel
+      Paid by: Prince | Date: 2026-07-21T06:31:59
+    • sdfg
+      Amount: Rs.500.00 | Category: entertainment
+      Paid by: Prince | Date: 2026-07-21T06:28:16
+    • gdfd
+      Amount: Rs.8000.00 | Category: food
+      Paid by: Prince | Date: 2026-07-21T06:26:58
+    • dsfg
+      Amount: Rs.2000.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-21T06:25:31
+    • df
+      Amount: Rs.500.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T06:24:18
+    • dfghj
+      Amount: Rs.200.00 | Category: travel
+      Paid by: deepak | Date: 2026-07-19T18:06:25
+    • fghjk
+      Amount: Rs.50000.00 | Category: food
+      Paid by: Prince | Date: 2026-07-19T18:01:52
+
+  Group: Dubai trip
+  ────────────────────────────────────────────────────────────────────
+    • dcdfv
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-25T05:53:03
+    • sddsf
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-25T05:52:06
+    • ffd
+      Amount: Rs.500.00 | Category: entertainment
+      Paid by: Prince | Date: 2026-07-21T19:38:17
+    • dfd
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: Prince | Date: 2026-07-21T19:37:13
+    • fghj
+      Amount: Rs.100.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T19:35:48
+    • eewdw
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-21T18:48:55
+    • swadas
+      Amount: Rs.100.00 | Category: other
+      Paid by: deepak | Date: 2026-07-21T18:47:57
+    • gfthtf
+      Amount: Rs.100.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T07:13:23
+    • rtbfn
+      Amount: Rs.100.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T07:12:46
+    • yegrr
+      Amount: Rs.100.00 | Category: travel
+      Paid by: deepak | Date: 2026-07-21T07:06:57
+    • fghjk
+      Amount: Rs.100.00 | Category: other
+      Paid by: deepak | Date: 2026-07-21T07:05:30
+    • sd
+      Amount: Rs.100.00 | Category: entertainment
+      Paid by: deepak | Date: 2026-07-21T07:04:17
+    • dgdfgdf
+      Amount: Rs.100.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T06:54:26
+    • svfd
+      Amount: Rs.500.00 | Category: food
+      Paid by: deepak | Date: 2026-07-21T06:52:59
+
+  ────────────────────────────────────────────────────────────────────
+  TOTAL: 30 expenses | Total Amount: Rs.66400.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ FINANCIAL BALANCES                                                │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Dubai trip
+    Total Paid  : Rs.0.00
+    Total Share : Rs.1350.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  Group: Rishikesh Trip
+    Total Paid  : Rs.58600.00
+    Total Share : Rs.30750.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  Group: Dubai trip
+    Total Paid  : Rs.600.00
+    Total Share : Rs.1100.00
+    Net Balance : Rs.-50.00
+    Status      : YOU OWE MONEY ✗
+
+  ────────────────────────────────────────────────────────────────────
+  OVERALL BALANCE: Paid Rs.59200.00 | Share Rs.33200.00 | Net Rs.-50.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ SETTLEMENT INFORMATION                                            │
+└────────────────────────────────────────────────────────────────────┘
+  • Group: Dubai trip | deepak pays Prince Rs.200.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.50.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.1050.00 | Settled: Yes
+  • Group: Rishikesh Trip | Prince pays deepak Rs.50.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.50.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.100.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.100.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.50.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.100.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.250.00 | Settled: Yes
+  • Group: Rishikesh Trip | deepak pays Prince Rs.250.00 | Settled: Yes
+  • Group: Rishikesh Trip | deepak pays Prince Rs.4000.00 | Settled: Yes
+  • Group: Rishikesh Trip | Prince pays deepak Rs.1000.00 | Settled: Yes
+  • Group: Rishikesh Trip | Prince pays deepak Rs.350.00 | Settled: Yes
+  • Group: Dubai trip | Prince pays deepak Rs.250.00 | Settled: Yes
+  • Group: Rishikesh Trip | deepak pays Prince Rs.25000.00 | Settled: Yes
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ACTIVITY LOG                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  • [2026-07-25 05:53:03.0] EXPENSE_ADDED — dcdfv — ₹100.00
+  • [2026-07-25 05:52:42.0] SETTLEMENT_PAID — deepak → Prince ₹200.00
+  • [2026-07-25 05:52:30.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-25 05:52:06.0] EXPENSE_ADDED — sddsf — ₹100.00
+  • [2026-07-25 05:51:40.0] USER_LOGIN — Prince logged in
+  • [2026-07-25 05:42:41.0] SETTLEMENT_PAID — Prince → deepak ₹50.00
+  • [2026-07-25 05:42:27.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-25 05:42:05.0] EXPENSE_ADDED — dfghjk — ₹100.00
+  • [2026-07-25 05:41:42.0] SETTLEMENT_PAID — Prince → deepak ₹1050.00
+  • [2026-07-25 05:41:17.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-25 05:41:02.0] EXPENSE_ADDED — adwd — ₹100.00
+  • [2026-07-25 05:40:08.0] USER_LOGIN — Prince logged in
+  • [2026-07-25 05:33:41.0] SETTLEMENT_PAID — Prince → deepak ₹50.00
+  • [2026-07-25 05:33:02.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-25 05:32:50.0] EXPENSE_ADDED — gghv — ₹100.00
+  • [2026-07-25 05:29:04.0] EXPENSE_ADDED — ghjk — ₹100.00
+  • [2026-07-25 05:28:35.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 19:38:28.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 19:38:17.0] EXPENSE_ADDED — ffd — ₹500.00
+  • [2026-07-21 19:37:57.0] SETTLEMENT_PAID — Prince → deepak ₹50.00
+  • [2026-07-21 19:37:20.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 19:37:13.0] EXPENSE_ADDED — dfd — ₹100.00
+  • [2026-07-21 19:36:51.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 19:35:48.0] EXPENSE_ADDED — fghj — ₹100.00
+  • [2026-07-21 19:35:25.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 18:49:00.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 18:48:55.0] EXPENSE_ADDED — eewdw — ₹100.00
+  • [2026-07-21 18:48:15.0] SETTLEMENT_PAID — Prince → deepak ₹100.00
+  • [2026-07-21 18:48:05.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 18:47:57.0] EXPENSE_ADDED — swadas — ₹100.00
+  • [2026-07-21 18:47:32.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 07:13:28.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 07:13:23.0] EXPENSE_ADDED — gfthtf — ₹100.00
+  • [2026-07-21 07:13:06.0] SETTLEMENT_PAID — Prince → deepak ₹100.00
+  • [2026-07-21 07:12:57.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 07:12:46.0] EXPENSE_ADDED — rtbfn — ₹100.00
+  • [2026-07-21 07:12:27.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 07:07:08.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 07:06:57.0] EXPENSE_ADDED — yegrr — ₹100.00
+  • [2026-07-21 07:06:23.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 07:05:56.0] SETTLEMENT_PAID — Prince → deepak ₹50.00
+  • [2026-07-21 07:05:42.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 07:05:30.0] EXPENSE_ADDED — fghjk — ₹100.00
+  • [2026-07-21 07:04:43.0] SETTLEMENT_PAID — Prince → deepak ₹100.00
+  • [2026-07-21 07:04:33.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 07:04:17.0] EXPENSE_ADDED — sd — ₹100.00
+  • [2026-07-21 07:03:55.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:54:32.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:54:26.0] EXPENSE_ADDED — dgdfgdf — ₹100.00
+  • [2026-07-21 06:53:16.0] SETTLEMENT_PAID — Prince → deepak ₹250.00
+  • [2026-07-21 06:53:06.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:52:59.0] EXPENSE_ADDED — svfd — ₹500.00
+  • [2026-07-21 06:52:35.0] MEMBER_ADDED — deepak added to group
+  • [2026-07-21 06:52:02.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:48:35.0] EXPENSE_ADDED — sdfg — ₹500.00
+  • [2026-07-21 06:48:15.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:47:24.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:47:18.0] EXPENSE_ADDED — rtrtft — ₹500.00
+  • [2026-07-21 06:46:48.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:45:12.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:45:04.0] EXPENSE_ADDED — sdf — ₹500.00
+  • [2026-07-21 06:44:39.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:31:59.0] EXPENSE_ADDED — sdf — ₹100.00
+  • [2026-07-21 06:31:23.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:28:38.0] SETTLEMENT_PAID — deepak → Prince ₹250.00
+  • [2026-07-21 06:28:28.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:28:16.0] EXPENSE_ADDED — sdfg — ₹500.00
+  • [2026-07-21 06:27:21.0] SETTLEMENT_PAID — deepak → Prince ₹4000.00
+  • [2026-07-21 06:27:05.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:26:58.0] EXPENSE_ADDED — gdfd — ₹8000.00
+  • [2026-07-21 06:26:27.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 06:25:53.0] SETTLEMENT_PAID — Prince → deepak ₹1000.00
+  • [2026-07-21 06:25:41.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:25:31.0] EXPENSE_ADDED — dsfg — ₹2000.00
+  • [2026-07-21 06:24:50.0] SETTLEMENT_PAID — Prince → deepak ₹350.00
+  • [2026-07-21 06:24:34.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 06:24:19.0] EXPENSE_ADDED — df — ₹500.00
+  • [2026-07-21 06:23:17.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 05:16:10.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 05:16:00.0] EXPENSE_ADDED — sdfg — ₹500.00
+  • [2026-07-21 05:15:20.0] SETTLEMENT_PAID — Prince → deepak ₹250.00
+  • [2026-07-21 05:15:04.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-21 05:14:41.0] EXPENSE_ADDED — hm, — ₹500.00
+  • [2026-07-21 05:13:57.0] MEMBER_ADDED — deepak added to group
+  • [2026-07-21 05:13:40.0] GROUP_CREATED — Group 'Dubai trip' created
+  • [2026-07-21 05:12:39.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 02:55:17.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:06:25.0] EXPENSE_ADDED — dfghj — ₹200.00
+  • [2026-07-19 18:05:46.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:03:34.0] SETTLEMENT_PAID — deepak → Prince ₹25000.00
+  • [2026-07-19 18:03:12.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-19 18:01:52.0] EXPENSE_ADDED — fghjk — ₹50000.00
+  • [2026-07-19 18:01:26.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:00:05.0] MEMBER_ADDED — deepak added to group
+  • [2026-07-19 17:59:57.0] GROUP_CREATED — Group 'Rishikesh Trip' created
+  • [2026-07-19 17:59:42.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:58:02.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:25:14.0] GROUP_CREATED — Group 'Dubai trip' created
+  • [2026-07-19 17:25:00.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:24:44.0] USER_REGISTERED — Prince registered
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                        END OF EXPENSE REPORT                         ║
+╚══════════════════════════════════════════════════════════════════════╝
