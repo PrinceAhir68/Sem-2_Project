@@ -1,0 +1,147 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                        EXPENSE REPORT EXPORT                         ║
+║                    All Information with Expenses                     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Export Generated: 2026-08-07 23:52:57
+
+┌────────────────────────────────────────────────────────────────────┐
+│ USER INFORMATION                                                  │
+└────────────────────────────────────────────────────────────────────┘
+  Name            : Prince
+  Email           : princeahir68@gmail.com
+  Username        : prince
+  Member Since    : 2026-08-08T00:44:35
+
+┌────────────────────────────────────────────────────────────────────┐
+│ GROUPS AND MEMBERS                                                │
+└────────────────────────────────────────────────────────────────────┘
+  1. Greece Trip
+     Creator: Krinal
+     Members: 3
+       • Deepak (deepak123@gmail.com)
+       • Krinal (krinal123@gmail.com)
+       • Prince (princeahir68@gmail.com)
+
+  2. Monaco Trip
+     Creator: Prince
+     Members: 3
+       • Deepak (deepak123@gmail.com)
+       • Krinal (krinal123@gmail.com)
+       • Prince (princeahir68@gmail.com)
+
+  3. Dubai Trip
+     Creator: Prince
+     Members: 3
+       • Deepak (deepak123@gmail.com)
+       • Krinal (krinal123@gmail.com)
+       • Prince (princeahir68@gmail.com)
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ALL EXPENSES                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Greece Trip
+  ────────────────────────────────────────────────────────────────────
+    • ssd
+      Amount: Rs.300.00 | Category: food
+      Paid by: Deepak | Date: 2026-08-08T05:18:41
+    • dds
+      Amount: Rs.3425.00 | Category: food
+      Paid by: Krinal | Date: 2026-08-08T01:08:04
+    • dss
+      Amount: Rs.4000.00 | Category: food
+      Paid by: Krinal | Date: 2026-08-08T01:03:32
+
+  Group: Monaco Trip
+  ────────────────────────────────────────────────────────────────────
+    • fdfs
+      Amount: Rs.1000.00 | Category: food
+      Paid by: Krinal | Date: 2026-08-08T00:58:41
+    • Pizza
+      Amount: Rs.4000.00 | Category: food
+      Paid by: Prince | Date: 2026-08-08T00:56:05
+
+  Group: Dubai Trip
+  ────────────────────────────────────────────────────────────────────
+    • addsf
+      Amount: Rs.2000.00 | Category: food
+      Paid by: Deepak | Date: 2026-08-08T00:47:21
+
+  ────────────────────────────────────────────────────────────────────
+  TOTAL: 6 expenses | Total Amount: Rs.14725.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ FINANCIAL BALANCES                                                │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Greece Trip
+    Total Paid  : Rs.0.00
+    Total Share : Rs.3095.83
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  Group: Monaco Trip
+    Total Paid  : Rs.4000.00
+    Total Share : Rs.2033.33
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  Group: Dubai Trip
+    Total Paid  : Rs.0.00
+    Total Share : Rs.400.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  ────────────────────────────────────────────────────────────────────
+  OVERALL BALANCE: Paid Rs.4000.00 | Share Rs.5529.16 | Net Rs.0.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ SETTLEMENT INFORMATION                                            │
+└────────────────────────────────────────────────────────────────────┘
+  • Group: Greece Trip | Prince pays Krinal Rs.1662.50 | Status: Paid
+  • Group: Greece Trip | Prince pays Deepak Rs.100.00 | Status: Paid
+  • Group: Greece Trip | Prince pays Krinal Rs.1333.33 | Status: Paid
+  • Group: Monaco Trip | Prince pays Krinal Rs.700.00 | Status: Paid
+  • Group: Monaco Trip | Krinal pays Prince Rs.1333.33 | Status: Paid
+  • Group: Monaco Trip | Deepak pays Prince Rs.1333.34 | Status: Paid
+  • Group: Dubai Trip | Prince pays Deepak Rs.400.00 | Status: Paid
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ACTIVITY LOG                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  • [2026-08-08 05:22:51.0] SETTLEMENT_PAID — Prince â†’ Krinal â‚¹1662.50
+  • [2026-08-08 05:22:34.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 05:19:13.0] SETTLEMENT_PAY_BLOCKED — Krinal blocked unauthorized settlement payment attempt by 1 on settlement #10.
+  • [2026-08-08 05:19:02.0] SETTLEMENT_PAID — Prince â†’ Deepak â‚¹100.00
+  • [2026-08-08 05:18:46.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-08 05:18:41.0] EXPENSE_ADDED — ssd — ₹300.00
+  • [2026-08-08 05:18:18.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 01:43:19.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 01:08:40.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 01:01:23.0] SETTLEMENT_PAY_BLOCKED — Deepak blocked unauthorized settlement payment attempt by 1 on settlement #6.
+  • [2026-08-08 01:00:52.0] SETTLEMENT_PAID — Prince â†’ Krinal â‚¹700.00 (confirmed by payer)
+  • [2026-08-08 01:00:38.0] SETTLEMENT_PAY_BLOCKED — Deepak blocked unauthorized settlement payment attempt by 1 on settlement #6.
+  • [2026-08-08 00:58:51.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-08 00:58:41.0] EXPENSE_ADDED — fdfs — ₹1000.00
+  • [2026-08-08 00:57:18.0] SETTLEMENT_PAID — Krinal â†’ Prince â‚¹1333.33 (confirmed by receiver)
+  • [2026-08-08 00:56:51.0] SETTLEMENT_PAID — Deepak â†’ Prince â‚¹1333.34 (confirmed by receiver)
+  • [2026-08-08 00:56:23.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-08 00:56:05.0] EXPENSE_ADDED — Pizza — ₹4000.00
+  • [2026-08-08 00:55:30.0] MEMBER_ADDED — Krinal added to group
+  • [2026-08-08 00:55:27.0] MEMBER_ADDED — Deepak added to group
+  • [2026-08-08 00:55:20.0] GROUP_CREATED — Group 'Monaco Trip' created
+  • [2026-08-08 00:54:25.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 00:52:48.0] SETTLEMENT_PAID — Prince â†’ Deepak â‚¹400.00 (confirmed by payer)
+  • [2026-08-08 00:52:20.0] SETTLEMENT_PAY_BLOCKED — Krinal blocked unauthorized settlement payment attempt by 1 on settlement #1.
+  • [2026-08-08 00:51:53.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-08 00:51:19.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 00:47:21.0] EXPENSE_ADDED — addsf — ₹2000.00
+  • [2026-08-08 00:46:38.0] MEMBER_ADDED — Deepak added to group
+  • [2026-08-08 00:45:59.0] MEMBER_ADDED — Krinal added to group
+  • [2026-08-08 00:45:53.0] GROUP_CREATED — Group 'Dubai Trip' created
+  • [2026-08-08 00:45:45.0] USER_LOGIN — Prince logged in
+  • [2026-08-08 00:44:35.0] USER_REGISTERED — Prince registered
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                        END OF EXPENSE REPORT                         ║
+╚══════════════════════════════════════════════════════════════════════╝

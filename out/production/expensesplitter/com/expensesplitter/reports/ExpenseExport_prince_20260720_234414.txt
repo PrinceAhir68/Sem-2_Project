@@ -1,0 +1,104 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                        EXPENSE REPORT EXPORT                         ║
+║                    All Information with Expenses                     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Export Generated: 2026-07-20 23:44:14
+
+┌────────────────────────────────────────────────────────────────────┐
+│ USER INFORMATION                                                  │
+└────────────────────────────────────────────────────────────────────┘
+  Name            : Prince
+  Email           : pince@gmail.com
+  Username        : prince
+  Member Since    : 2026-07-19T17:24:44
+
+┌────────────────────────────────────────────────────────────────────┐
+│ GROUPS AND MEMBERS                                                │
+└────────────────────────────────────────────────────────────────────┘
+  1. Dubai trip
+     Creator: Prince
+     Members: 2
+       • deepak (deepak@gmail.com)
+       • Prince (pince@gmail.com)
+
+  2. Rishikesh Trip
+     Creator: Prince
+     Members: 2
+       • deepak (deepak@gmail.com)
+       • Prince (pince@gmail.com)
+
+  3. Dubai trip
+     Creator: Prince
+     Members: 1
+       • Prince (pince@gmail.com)
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ALL EXPENSES                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Rishikesh Trip
+  ────────────────────────────────────────────────────────────────────
+    • dfghj
+      Amount: Rs.200.00 | Category: travel
+      Paid by: deepak | Date: 2026-07-19T18:06:25
+    • fghjk
+      Amount: Rs.50000.00 | Category: food
+      Paid by: Prince | Date: 2026-07-19T18:01:52
+
+  ────────────────────────────────────────────────────────────────────
+  TOTAL: 2 expenses | Total Amount: Rs.50200.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ FINANCIAL BALANCES                                                │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Dubai trip
+    Total Paid  : Rs.0.00
+    Total Share : Rs.0.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  Group: Rishikesh Trip
+    Total Paid  : Rs.50000.00
+    Total Share : Rs.25100.00
+    Net Balance : Rs.24900.00
+    Status      : YOU ARE OWED MONEY ✓
+
+  Group: Dubai trip
+    Total Paid  : Rs.0.00
+    Total Share : Rs.0.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  ────────────────────────────────────────────────────────────────────
+  OVERALL BALANCE: Paid Rs.50000.00 | Share Rs.25100.00 | Net Rs.24900.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ SETTLEMENT INFORMATION                                            │
+└────────────────────────────────────────────────────────────────────┘
+  • Group: Rishikesh Trip | deepak pays Prince Rs.25000.00 | Settled: Yes
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ACTIVITY LOG                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  • [2026-07-21 05:13:57.0] MEMBER_ADDED — deepak added to group
+  • [2026-07-21 05:13:40.0] GROUP_CREATED — Group 'Dubai trip' created
+  • [2026-07-21 05:12:39.0] USER_LOGIN — Prince logged in
+  • [2026-07-21 02:55:17.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:06:25.0] EXPENSE_ADDED — dfghj — ₹200.00
+  • [2026-07-19 18:05:46.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:03:34.0] SETTLEMENT_PAID — deepak → Prince ₹25000.00
+  • [2026-07-19 18:03:12.0] DEBT_SIMPLIFIED — 1 settlement(s) generated
+  • [2026-07-19 18:01:52.0] EXPENSE_ADDED — fghjk — ₹50000.00
+  • [2026-07-19 18:01:26.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 18:00:05.0] MEMBER_ADDED — deepak added to group
+  • [2026-07-19 17:59:57.0] GROUP_CREATED — Group 'Rishikesh Trip' created
+  • [2026-07-19 17:59:42.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:58:02.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:25:14.0] GROUP_CREATED — Group 'Dubai trip' created
+  • [2026-07-19 17:25:00.0] USER_LOGIN — Prince logged in
+  • [2026-07-19 17:24:44.0] USER_REGISTERED — Prince registered
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                        END OF EXPENSE REPORT                         ║
+╚══════════════════════════════════════════════════════════════════════╝

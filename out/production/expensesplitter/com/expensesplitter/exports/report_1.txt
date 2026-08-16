@@ -1,0 +1,82 @@
+======================================================================
+  EXPENSE SPLITTER — COMPLETE USER REPORT
+======================================================================
+User ID    : 1
+Generated  : 2026-07-19T12:34:21.806580200
+
+----------------------------------------------------------------------
+1. USER PROFILE
+----------------------------------------------------------------------
+  User ID         : 1
+  Name            : Prince
+  Email           : pince@gmail.com
+  Username        : prince
+  Failed attempts : 0
+  Locked until    : Not locked
+  Member since    : 2026-07-19 17:24:44.0
+
+----------------------------------------------------------------------
+2. GROUPS AND MEMBERS
+----------------------------------------------------------------------
+  Group: Dubai trip (id=1)
+    Created by : Prince
+    Created at : 2026-07-19 17:25:14.0
+    Members:
+      - Prince | pince@gmail.com | @prince | joined 2026-07-19 17:25:14.0
+
+  Group: Rishikesh Trip (id=2)
+    Created by : Prince
+    Created at : 2026-07-19 17:59:57.0
+    Members:
+      - deepak | deepak@gmail.com | @deepak | joined 2026-07-19 18:00:05.0
+      - Prince | pince@gmail.com | @prince | joined 2026-07-19 17:59:57.0
+
+----------------------------------------------------------------------
+3. EXPENSES (GROUP / ACCOUNT NAME + CATEGORY)
+----------------------------------------------------------------------
+  [#1] Account/Group: Rishikesh Trip | Category: food
+         Desc: fghjk | Amount: Rs.50000.00 | Split: equal
+         Paid by: Prince | Date: 2026-07-19 18:01:52.0
+
+----------------------------------------------------------------------
+4. FINANCIAL BALANCE AND STATUS
+----------------------------------------------------------------------
+  --- Your balances by group ---
+  [Dubai trip] Paid: Rs.0.00 | Share: Rs.0.00 | Net: Rs.0.00 (SETTLED (zero))
+  [Rishikesh Trip] Paid: Rs.50000.00 | Share: Rs.25000.00 | Net: Rs.25000.00 (IS OWED (credit))
+
+  Total net balance across groups: Rs.25000.00 (IS OWED (credit))
+
+  --- Group member balances (positive = is owed, negative = owes) ---
+  [Dubai trip] Prince — Paid: Rs.0.00 | Share: Rs.0.00 | Net: Rs.0.00 (SETTLED (zero))
+  [Rishikesh Trip] Prince — Paid: Rs.50000.00 | Share: Rs.25000.00 | Net: Rs.25000.00 (IS OWED (credit))
+  [Rishikesh Trip] deepak — Paid: Rs.0.00 | Share: Rs.25000.00 | Net: Rs.-25000.00 (OWES (debt))
+
+----------------------------------------------------------------------
+5. SETTLEMENT INFORMATION
+----------------------------------------------------------------------
+  [#1] Group: Rishikesh Trip | deepak pays Prince Rs.25000.00
+         Status: SETTLED | Settled at: 2026-07-19 18:03:34.0 | Created: 2026-07-19 18:03:12.0
+
+  Summary: 1 settled, 0 unsettled
+
+----------------------------------------------------------------------
+6. COMPLETE ACTIVITY LOG
+----------------------------------------------------------------------
+  [2026-07-19 18:03:34.0] SETTLEMENT_PAID — deepak → Prince ₹25000.00 (group: Rishikesh Trip)
+  [2026-07-19 18:03:12.0] DEBT_SIMPLIFIED — 1 settlement(s) generated (group: Rishikesh Trip)
+  [2026-07-19 18:01:52.0] EXPENSE_ADDED — fghjk — ₹50000.00 (group: Rishikesh Trip)
+  [2026-07-19 18:01:26.0] USER_LOGIN — Prince logged in
+  [2026-07-19 18:00:05.0] MEMBER_ADDED — deepak added to group (group: Rishikesh Trip)
+  [2026-07-19 17:59:57.0] GROUP_CREATED — Group 'Rishikesh Trip' created (group: Rishikesh Trip)
+  [2026-07-19 17:59:42.0] USER_LOGIN — Prince logged in
+  [2026-07-19 17:58:02.0] USER_LOGIN — Prince logged in
+  [2026-07-19 17:25:14.0] GROUP_CREATED — Group 'Dubai trip' created (group: Dubai trip)
+  [2026-07-19 17:25:00.0] USER_LOGIN — Prince logged in
+  [2026-07-19 17:24:44.0] USER_REGISTERED — Prince registered
+
+
+======================================================================
+END OF USER REPORT
+Generated at: 2026-07-19T12:34:21.863156
+======================================================================

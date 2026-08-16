@@ -1,0 +1,93 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                        EXPENSE REPORT EXPORT                         ║
+║                    All Information with Expenses                     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Export Generated: 2026-08-01 18:13:38
+
+┌────────────────────────────────────────────────────────────────────┐
+│ USER INFORMATION                                                  │
+└────────────────────────────────────────────────────────────────────┘
+  Name            : Prince Ahir
+  Email           : prince68@gmail.com
+  Username        : prince8
+  Member Since    : 2026-08-01T19:53:13
+
+┌────────────────────────────────────────────────────────────────────┐
+│ GROUPS AND MEMBERS                                                │
+└────────────────────────────────────────────────────────────────────┘
+  1. Monaco trip
+     Creator: Prince Ahir
+     Members: 3
+       • deepak (deepak@gmail.com)
+       • Krinal (krinal8@gmail.com)
+       • Prince Ahir (prince68@gmail.com)
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ALL EXPENSES                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Monaco trip
+  ────────────────────────────────────────────────────────────────────
+    • dserfdfdvefs
+      Amount: Rs.300.00 | Category: food
+      Paid by: Krinal | Date: 2026-08-01T23:40:13
+    • iughh
+      Amount: Rs.300.00 | Category: travel
+      Paid by: Krinal | Date: 2026-08-01T20:31:45
+    • ssd
+      Amount: Rs.300.00 | Category: food
+      Paid by: Krinal | Date: 2026-08-01T20:21:18
+    • dfd
+      Amount: Rs.600.00 | Category: travel
+      Paid by: Prince Ahir | Date: 2026-08-01T19:55:55
+
+  ────────────────────────────────────────────────────────────────────
+  TOTAL: 4 expenses | Total Amount: Rs.1500.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ FINANCIAL BALANCES                                                │
+└────────────────────────────────────────────────────────────────────┘
+  Group: Monaco trip
+    Total Paid  : Rs.600.00
+    Total Share : Rs.400.00
+    Net Balance : Rs.0.00
+    Status      : SETTLED ✓
+
+  ────────────────────────────────────────────────────────────────────
+  OVERALL BALANCE: Paid Rs.600.00 | Share Rs.400.00 | Net Rs.0.00
+
+┌────────────────────────────────────────────────────────────────────┐
+│ SETTLEMENT INFORMATION                                            │
+└────────────────────────────────────────────────────────────────────┘
+  • Group: Monaco trip | Prince Ahir pays Krinal Rs.100.00 | Status: Paid
+  • Group: Monaco trip | Prince Ahir pays Krinal Rs.100.00 | Status: Paid
+  • Group: Monaco trip | Krinal pays Prince Ahir Rs.200.00 | Status: Paid
+  • Group: Monaco trip | deepak pays Prince Ahir Rs.200.00 | Status: Paid
+
+┌────────────────────────────────────────────────────────────────────┐
+│ ACTIVITY LOG                                                      │
+└────────────────────────────────────────────────────────────────────┘
+  • [2026-08-01 23:43:33.0] SETTLEMENT_PAID — deepak → Krinal ₹500.00
+  • [2026-08-01 23:41:50.0] SETTLEMENT_PAID — Prince Ahir → Krinal ₹100.00
+  • [2026-08-01 23:41:15.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-01 23:40:13.0] EXPENSE_ADDED — dserfdfdvefs — ₹300.00
+  • [2026-08-01 23:39:28.0] USER_LOGIN — Prince Ahir logged in
+  • [2026-08-01 20:31:45.0] EXPENSE_ADDED — iughh — ₹300.00
+  • [2026-08-01 20:21:55.0] SETTLEMENT_PAID — Prince Ahir → Krinal ₹100.00
+  • [2026-08-01 20:21:21.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-01 20:21:18.0] EXPENSE_ADDED — ssd — ₹300.00
+  • [2026-08-01 20:10:59.0] USER_LOGIN — Prince Ahir logged in
+  • [2026-08-01 20:03:32.0] SETTLEMENT_PAID — Krinal → Prince Ahir ₹200.00
+  • [2026-08-01 20:01:02.0] SETTLEMENT_PAID — deepak → Prince Ahir ₹200.00
+  • [2026-08-01 19:56:09.0] DEBT_SIMPLIFIED — 2 settlement(s) generated
+  • [2026-08-01 19:55:55.0] EXPENSE_ADDED — dfd — ₹600.00
+  • [2026-08-01 19:53:56.0] MEMBER_ADDED — deepak added to group
+  • [2026-08-01 19:53:52.0] MEMBER_ADDED — Krinal added to group
+  • [2026-08-01 19:53:40.0] GROUP_CREATED — Group 'Monaco trip' created
+  • [2026-08-01 19:53:27.0] USER_LOGIN — Prince Ahir logged in
+  • [2026-08-01 19:53:13.0] USER_REGISTERED — Prince Ahir registered
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                        END OF EXPENSE REPORT                         ║
+╚══════════════════════════════════════════════════════════════════════╝
