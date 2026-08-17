@@ -18,7 +18,7 @@ import java.util.*;
 public class GroupMenu {
 
     private static final String[] CATEGORIES = {
-            "food", "travel", "hotel", "shopping", "entertainment", "other"
+            "food", "travel", "hotel", "shopping", "entertainment", "oth*er"
     };
 
     private static final DateTimeFormatter DATE_TIME_FMT =
@@ -45,11 +45,14 @@ public class GroupMenu {
             System.out.println("  7. Reports");
             System.out.println("  8. Group Settings");
             System.out.println("  9. Pending Custom Splits");
-            System.out.println("  10. search by Expense amount");
+            //This option is asked when External Presentation
+          //  System.out.println("  10. search by Expense amount");
             System.out.println("  0. Back");
             System.out.println("=".repeat(50));
 
-            int choice = ConsoleHelper.readChoice("Choose option: ", 0, 10);
+          //  int choice = ConsoleHelper.readChoice("Choose option: ", 0, 10);
+            int choice = ConsoleHelper.readChoice("Choose option: ", 0, 9);
+
 
             switch (choice) {
                 case 1 -> addExpense(group.getGroupId());
@@ -61,7 +64,7 @@ public class GroupMenu {
                 case 7 -> reports(group.getGroupId());
                 case 8 -> groupSettings(group);
                 case 9 -> pendingCustomSplits(group.getGroupId());
-            case  10 -> serchByExpenses();
+          //  case  10 -> serchByExpenses();
                 case 0 -> { return; }
             }
         }
@@ -1041,28 +1044,28 @@ public class GroupMenu {
         ConsoleHelper.printSuccess("Account created! Please login.");
         return null;
     }
-public  static  void serchByExpenses()
-{
-    int searchE = ConsoleHelper.readInt("Enter amount for searching = ");
-    String url = DBConnection.getUrl();
-    String username = DBConnection.getUsername();
-    String pass = "";
-    String sql = "select * from expenses where amount >= "+searchE+" ";
-    try {
-        Connection con = DriverManager.getConnection(url,username,pass);
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(sql);
-        while (rs.next()) {
-            System.out.println("amt = "+rs.getBigDecimal("amount")+"dse = "+rs.getString("description"));
-
-        }
-
-    } catch (SQLException e) {
-        System.out.println("Conn");
-    }
-
-
-}
+//public  static  void serchByExpenses()
+//{
+//    int searchE = ConsoleHelper.readInt("Enter amount for searching = ");
+//    String url = DBConnection.getUrl();
+//    String username = DBConnection.getUsername();
+//    String pass = "";
+//    String sql = "select * from expenses where amount >= "+searchE+" ";
+//    try {
+//        Connection con = DriverManager.getConnection(url,username,pass);
+//        Statement st = con.createStatement();
+//        ResultSet rs = st.executeQuery(sql);
+//        while (rs.next()) {
+//            System.out.println("amt = "+rs.getBigDecimal("amount")+"dse = "+rs.getString("description"));
+//
+//        }
+//
+//    } catch (SQLException e) {
+//        System.out.println("Conn");
+//    }
+//
+//
+//}
     private record SplitPlan(boolean distributedCustom, Map<Integer, BigDecimal> shares, BigDecimal creatorShare) { }
 }
 
