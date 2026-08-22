@@ -12,7 +12,8 @@ import java.util.PriorityQueue;
  * Greedy debt simplification using two Max Heaps (Priority Queues).
  * Repeatedly matches the largest creditor with the largest debtor.
  */
-public class DebtSimplifier {
+public class
+DebtSimplifier {
 
     private static final BigDecimal THRESHOLD = new BigDecimal("0.01");
 

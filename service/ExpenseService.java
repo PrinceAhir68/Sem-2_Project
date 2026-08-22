@@ -540,6 +540,15 @@ public class ExpenseService {
                     return new ShareSubmissionResult(null,
                             actorSplit.getUserName() + " is removed from this expense", List.of());
                 }
+                boolean lastPendingContributor = splits.stream()
+                        .filter(split -> split.getUserId() != actorId)
+                        .noneMatch(split -> "pending".equals(split.getContributionStatus()));
+                if (lastPendingContributor && submittedShare.compareTo(remaining) < 0) {
+                    return new ShareSubmissionResult(
+                            "As the last pending contributor, you must enter the exact remaining amount of â‚¹"
+                                    + remaining.setScale(2, RoundingMode.HALF_UP) + ".",
+                            null, List.of());
+                }
                 if (submittedShare.compareTo(remaining) > 0) {
                     return new ShareSubmissionResult(
                             "Amount should be less than ₹" + remaining.setScale(2, RoundingMode.HALF_UP) + ".",

@@ -1,6 +1,8 @@
 package com.expensesplitter.menu;
 
+
 import com.expensesplitter.algorithm.SettlementSuggestion;
+import com.expensesplitter.database.DBConnection;
 import com.expensesplitter.model.*;
 import com.expensesplitter.service.*;
 import com.expensesplitter.utility.ConsoleHelper;
@@ -9,18 +11,14 @@ import com.expensesplitter.utility.SessionManager;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.sql.*;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class GroupMenu {
 
     private static final String[] CATEGORIES = {
-            "food", "travel", "hotel", "shopping", "entertainment", "other"
+            "food", "travel", "hotel", "shopping", "entertainment", "oth*er"
     };
 
     private static final DateTimeFormatter DATE_TIME_FMT =
@@ -47,10 +45,14 @@ public class GroupMenu {
             System.out.println("  7. Reports");
             System.out.println("  8. Group Settings");
             System.out.println("  9. Pending Custom Splits");
+            //This option is asked when External Presentation
+          //  System.out.println("  10. search by Expense amount");
             System.out.println("  0. Back");
             System.out.println("=".repeat(50));
 
+          //  int choice = ConsoleHelper.readChoice("Choose option: ", 0, 10);
             int choice = ConsoleHelper.readChoice("Choose option: ", 0, 9);
+
 
             switch (choice) {
                 case 1 -> addExpense(group.getGroupId());
@@ -62,6 +64,7 @@ public class GroupMenu {
                 case 7 -> reports(group.getGroupId());
                 case 8 -> groupSettings(group);
                 case 9 -> pendingCustomSplits(group.getGroupId());
+          //  case  10 -> serchByExpenses();
                 case 0 -> { return; }
             }
         }
@@ -78,9 +81,9 @@ public class GroupMenu {
         }
 
         int payerChoice = selectPayer(members);
-        BigDecimal amount = ConsoleHelper.readAmount("Amount (): ");
+        BigDecimal amount = ConsoleHelper.readAmount("Amount  : ");
         String category = selectCategory();
-        String description = readValidDescription("Description: ");
+        String description = readValidDescription("Description : ");
         String splitType = selectSplitType();
         List<Integer> selectedIds = selectMembersForSplit(members);
 
@@ -302,7 +305,7 @@ public class GroupMenu {
                 .orElse("Your");
         BigDecimal suggested = amount.divide(BigDecimal.valueOf(memberIds.size()), 2, RoundingMode.HALF_UP);
         BigDecimal creatorShare = readShareAmountWithCap(
-                creatorName + "'s share [max ‚" + amount.setScale(2, RoundingMode.HALF_UP) + "]: ",
+                creatorName + " share [max " + amount.setScale(2, RoundingMode.HALF_UP) + "]: ",
                 suggested,
                 amount,
                 true
@@ -319,14 +322,14 @@ public class GroupMenu {
             BigDecimal sum = BigDecimal.ZERO;
             for (int id : memberIds) {
                 String name = members.stream().filter(m -> m.getUserId() == id).map(User::getName).findFirst().orElse("?");
-                BigDecimal share = ConsoleHelper.readAmount(name + "'s share (â‚¹): ");
+                BigDecimal share = ConsoleHelper.readAmount(name + " share : ");
                 shares.put(id, share);
                 sum = sum.add(share);
             }
             if (sum.subtract(amount).abs().compareTo(new BigDecimal("0.01")) <= 0) {
                 return shares;
             }
-            ConsoleHelper.printError("Shares sum to ‚" + sum + " but expense is ‚" + amount + ". Re-enter shares.");
+            ConsoleHelper.printError("Shares sum to " + sum + " but expense is " + amount + " Re-enter shares.");
         }
     }
 
@@ -336,7 +339,7 @@ public class GroupMenu {
             int totalPct = 0;
             for (int id : memberIds) {
                 String name = members.stream().filter(m -> m.getUserId() == id).map(User::getName).findFirst().orElse("?");
-                int pct = ConsoleHelper.readChoice(name + "'s percentage (0-100): ", 0, 100);
+                int pct = ConsoleHelper.readChoice(name + " percentage (0-100): ", 0, 100);
                 percentages.put(id, pct);
                 totalPct += pct;
             }
@@ -365,7 +368,7 @@ public class GroupMenu {
 
     private BigDecimal readShareAmountWithCap(String prompt, BigDecimal suggested, BigDecimal maxAmount, boolean allowZero) {
         while (true) {
-            String input = ConsoleHelper.readLine(prompt + "Suggested: ‚" + suggested.setScale(2, RoundingMode.HALF_UP) + " ");
+            String input = ConsoleHelper.readLine(prompt + "Suggested: " + suggested.setScale(2, RoundingMode.HALF_UP) + " ");
             if (input.isEmpty()) {
                 return suggested.setScale(2, RoundingMode.HALF_UP);
             }
@@ -380,7 +383,7 @@ public class GroupMenu {
                     continue;
                 }
                 if (amount.compareTo(maxAmount) > 0) {
-                    ConsoleHelper.printError("Amount should be less than â‚¹" + maxAmount.setScale(2, RoundingMode.HALF_UP) + ".");
+                    ConsoleHelper.printError("Amount should be less than " + maxAmount.setScale(2, RoundingMode.HALF_UP) + ".");
                     continue;
                 }
                 return amount;
@@ -460,7 +463,7 @@ public class GroupMenu {
         }
 
         for (Expense e : expenses) {
-            System.out.printf("  [%d] %s ” ‚%s | Paid by: %s | %s | %s%n",
+            System.out.printf("  [%d] %s ” %s | Paid by: %s | %s | %s%n",
                     e.getExpenseId(), e.getDescription(), e.getAmount(),
                     e.getPayerName(), e.getCategory(), e.getSplitType());
         }
@@ -479,7 +482,7 @@ public class GroupMenu {
 
         ConsoleHelper.printHeader("Edit Expense #" + expenseId);
         System.out.println("  Current: " + current.getDescription()
-                + " | â‚¹" + current.getAmount()
+                + " | " + current.getAmount()
                 + " | " + current.getCategory()
                 + " | paid by " + current.getPayerName());
         System.out.println();
@@ -489,7 +492,7 @@ public class GroupMenu {
             System.out.printf("  %d. %s%n", i + 1, members.get(i).getName());
         }
         int payerChoice = ConsoleHelper.readChoice("Payer: ", 1, members.size());
-        BigDecimal amount = ConsoleHelper.readAmount("New amount (): ");
+        BigDecimal amount = ConsoleHelper.readAmount("New amount : ");
         String category = selectCategory();
         String description = readValidDescription("New description: ");
         String splitType = selectSplitType();
@@ -567,7 +570,7 @@ public class GroupMenu {
             return;
         }
 
-        System.out.println("\n  Preview ” Suggested Settlements:");
+        System.out.println("\n  Preview Suggested Settlements:");
         System.out.println("  " + "-".repeat(40));
         for (SettlementSuggestion s : preview) {
             System.out.println("  " + s);
@@ -580,7 +583,7 @@ public class GroupMenu {
                 suggestions.size() + " settlement(s) saved. Pending list updated in one transaction."
         );
         for (SettlementSuggestion s : suggestions) {
-            System.out.println("  ’ " + s);
+            System.out.println( s);
         }
 
         maybeShowBalances(groupId);
@@ -597,7 +600,7 @@ public class GroupMenu {
             String sign = b.getNetBalance().compareTo(BigDecimal.ZERO) >= 0 ? "+" : "";
             String status = b.getNetBalance().compareTo(BigDecimal.ZERO) > 0 ? "(owed money)"
                     : b.getNetBalance().compareTo(BigDecimal.ZERO) < 0 ? "(owes money)" : "(settled)";
-            System.out.printf("  %-15s : %s‚%-8s  Paid: ‚%-8s  Share: ‚%-8s  %s%n",
+            System.out.printf("  %-15s : %s %-8s  Paid: %-8s  Share: %-8s  %s%n",
                     b.getUserName(), sign, b.getNetBalance(),
                     b.getTotalPaid(), b.getTotalShare(), status);
         }
@@ -611,7 +614,7 @@ public class GroupMenu {
             ConsoleHelper.printInfo("No pending settlements. Run 'Simplify Debts' first.");
         } else {
             for (Settlement s : pending) {
-                System.out.printf("  [%d] %s pays %s ‚%s%n",
+                System.out.printf("  [%d] %s pays %s %s%n",
                         s.getSettlementId(), s.getFromUserName(), s.getToUserName(), s.getAmount());
             }
             System.out.println("\n  1. For Skip this settlement.");
@@ -624,7 +627,7 @@ public class GroupMenu {
                 if (id > 0) {
                     boolean ok = ConsoleHelper.confirmDialog(
                             "Confirm Payment",
-                            "Is settlement #" + id + " correct, and are you sure you want to make this payment?"
+                            "Is settlement " + id + " correct, and are you sure you want to make this payment?"
                     );
                     if (!ok) {
                         ConsoleHelper.popupInfo("Cancelled", "Settlement not updated. No database changes.");
@@ -657,13 +660,13 @@ public class GroupMenu {
         for (PendingCustomSplitView view : pendingSplits) {
             Expense expense = view.getExpense();
             ExpenseSplit nextPending = view.getNextPendingSplit();
-            System.out.printf("  [%d] %s | ‚%s | Remaining: ‚%s%n",
+            System.out.printf("  [%d] %s | %s | Remaining: %s%n",
                     expense.getExpenseId(), expense.getDescription(), expense.getAmount(), expense.getRemainingAmount());
             if (nextPending != null) {
                 System.out.println("      Next turn: " + nextPending.getUserName());
             }
             for (ExpenseSplit split : view.getSplits()) {
-                System.out.printf("      %s -> ‚%s [%s]%n",
+                System.out.printf("      %s -> %s [%s]%n",
                         split.getUserName(), split.getShareAmount(), split.getContributionStatus());
             }
         }
@@ -708,8 +711,13 @@ public class GroupMenu {
             int pendingCount = Math.max(1, selected.getPendingParticipantCount());
             BigDecimal suggestion = selected.getExpense().getRemainingAmount()
                     .divide(BigDecimal.valueOf(pendingCount), 2, RoundingMode.HALF_UP);
+            String sharePrompt = pendingCount == 1
+                    ? "Your share  [enter exact "
+                    + selected.getExpense().getRemainingAmount().setScale(2, RoundingMode.HALF_UP) + "]: "
+                    : "Your share  [max "
+                    + selected.getExpense().getRemainingAmount().setScale(2, RoundingMode.HALF_UP) + "]: ";
             BigDecimal share = readShareAmountWithCap(
-                    "Your share  [max ‚" + selected.getExpense().getRemainingAmount().setScale(2, RoundingMode.HALF_UP) + "]: ",
+                    sharePrompt,
                     suggestion,
                     selected.getExpense().getRemainingAmount(),
                     true
@@ -772,7 +780,7 @@ public class GroupMenu {
                 String when = s.getSettledAt() != null
                         ? s.getSettledAt().format(DATE_TIME_FMT)
                         : "";
-                System.out.printf("  %s paid %s ‚%s  [%s]%n",
+                System.out.printf("  %s paid %s %s  [%s]%n",
                         s.getFromUserName(), s.getToUserName(), s.getAmount(), when);
             }
         }
@@ -797,7 +805,7 @@ public class GroupMenu {
         System.out.println("  Top Spender    : " + topSpender);
         System.out.println("\n  Category Breakdown:");
         categoryReport.forEach((cat, amt) ->
-                System.out.printf("    %-15s : ‚%s%n", cat, amt));
+                System.out.printf("    %-15s : %s%n", cat, amt));
 
         System.out.println("\n  Settlement Status:");
         if (paidSettlements.isEmpty() && pendingSettlements.isEmpty()) {
@@ -843,7 +851,7 @@ public class GroupMenu {
                 return;
             }
 
-            ConsoleHelper.printHeader("Export CLOB Report â†’ .txt File");
+            ConsoleHelper.printHeader("Export CLOB Report  .txt File");
             for (var report : reports) {
                 System.out.printf("  [%d] %s | %s | %d chars%n",
                         report.id(), report.reportName(), report.createdAt(), report.characterCount());
@@ -903,7 +911,7 @@ public class GroupMenu {
                 if (err.startsWith("No user found matching: ")) {
                     String q = err.substring("No user found matching: ".length()).trim();
                     boolean registerNow = ConsoleHelper.readYesNo(
-                            "'" + q + "' is not registered yet. Do you want to register this person now? (yes/no) ");
+                            "" + q + " is not registered yet. Do you want to register this person now? (yes/no) ");
 
                     if (registerNow) {
                         String regErr = registerUserFromQuery(q);
@@ -1036,6 +1044,28 @@ public class GroupMenu {
         ConsoleHelper.printSuccess("Account created! Please login.");
         return null;
     }
-
+//public  static  void serchByExpenses()
+//{
+//    int searchE = ConsoleHelper.readInt("Enter amount for searching = ");
+//    String url = DBConnection.getUrl();
+//    String username = DBConnection.getUsername();
+//    String pass = "";
+//    String sql = "select * from expenses where amount >= "+searchE+" ";
+//    try {
+//        Connection con = DriverManager.getConnection(url,username,pass);
+//        Statement st = con.createStatement();
+//        ResultSet rs = st.executeQuery(sql);
+//        while (rs.next()) {
+//            System.out.println("amt = "+rs.getBigDecimal("amount")+"dse = "+rs.getString("description"));
+//
+//        }
+//
+//    } catch (SQLException e) {
+//        System.out.println("Conn");
+//    }
+//
+//
+//}
     private record SplitPlan(boolean distributedCustom, Map<Integer, BigDecimal> shares, BigDecimal creatorShare) { }
 }
+

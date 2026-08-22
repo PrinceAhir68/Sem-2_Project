@@ -16,6 +16,7 @@ public class ActivityLogQueryDAO {
                 ORDER BY created_at DESC
                 LIMIT 100
                 """;
+
         List<String> logs = new ArrayList<>();
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {

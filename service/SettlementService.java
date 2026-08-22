@@ -34,7 +34,7 @@ public class SettlementService {
 
     /**
      * Marks a settlement as paid inside one transaction:
-     * UPDATE settlement + notification + history → COMMIT, or ROLLBACK on failure.
+     * UPDATE settlement + notification + history â†’ COMMIT, or ROLLBACK on failure.
      */
     public String markAsPaid(int settlementId) throws Exception {
         if (!SessionManager.isLoggedIn()) {
@@ -77,11 +77,11 @@ public class SettlementService {
                 balanceService.recalculateBalances(conn, s.getGroupId());
 
                 notificationDAO.create(conn, s.getToUser(),
-                        s.getFromUserName() + " paid you ₹" + s.getAmount());
+                        s.getFromUserName() + " paid you â‚¹" + s.getAmount());
 
                 activityLogDAO.log(conn, actorId, s.getGroupId(),
                         "SETTLEMENT_PAID",
-                        s.getFromUserName() + " → " + s.getToUserName() + " ₹" + s.getAmount());
+                        s.getFromUserName() + " â†’ " + s.getToUserName() + " â‚¹" + s.getAmount());
             });
             return null;
         } catch (Exception e) {

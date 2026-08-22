@@ -21,7 +21,7 @@ public class  DBConnection {
             + "&connectTimeout=10000"
             + "&socketTimeout=30000";
 
-    private static final String URL =
+    static final String URL =
             "jdbc:mysql://" + HOST + ":" + PORT + "/" + DATABASE + CONNECTION_PARAMS;
 
     private static final String SERVER_URL =

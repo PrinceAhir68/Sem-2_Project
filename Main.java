@@ -21,6 +21,7 @@ public class Main {
 
             new MainMenu().show();
         } catch (Exception e) {
+
             ConsoleHelper.printError(e.getMessage());
             System.out.println();
             System.out.println("Fix checklist:");
